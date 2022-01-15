@@ -76,7 +76,7 @@ button a{
 .container .article .left-part{
    width: 582px;
    height: 270px;
-   margin-left: 50px;
+   margin-left: 110px;
    padding-top: 100px;
 }
 
@@ -97,20 +97,29 @@ button a{
 margin-left: 250px;
 }
 
-.container img{
-    width: 440px;
-    height: 414px;
-    border-radius: 20px;   
+.animation-image{
+    width: 400px;
+    height: 400px;
+    background-image: url(../front-image/camera.png);
+    background-repeat:no-repeat;
+    border-radius: 5px;
+    box-shadow: .5px 5px 15px 5px rgb(128, 120, 120);
+    animation: slider 15s infinite linear;
+}
+
+@keyframes slider{
+    0%{ background-image: url(../front-image/camera.png) }
+    50%{ background-image: url(../front-image/camera2.png); }
 }
 
 /*-------------------------- Main grid section ----------------------*/
 .main-grid{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 .main-grid h2{
     text-align: center;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     color: #3A3A3A;
     padding-bottom: 50px;
 }
@@ -125,8 +134,13 @@ margin-left: 250px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
+    grid-row-gap: 50px;
 }
-
+.grid-body{
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow:.5px 5px 15px 5px rgb(165, 165, 165) ;
+}
 .grid-body p{
     font-size: 25px;
     font-weight: 600;
@@ -161,27 +175,74 @@ span{
 .see-more {
     font-size: 20px;
     text-align: right;
-    margin-right: 50px;
+    margin-right: 110px;
+    margin-top: 50px;
 }
 .see-more p a {
     color: #E02C6D;
     font-weight: 900;
     text-decoration: none;
 }
-.try-image{
-    width: 400px;
-    height: 400px;
-    background-image: url(../front-image/camera.png);
-    background-repeat:no-repeat;
-    box-shadow: 1px 5px 5px 5px black;
-    animation: slider 15s infinite linear;
+
+/* ------------------Optional section--------------------  */
+
+.offer-image-info{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+}
+.optional-container h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 100px 0;
 }
 
-@keyframes slider{
-    0%{ background-image: url(../front-image/camera.png) }
-    50%{ background-image: url(../front-image/camera2.png); }
+.offer-image-info img{
+    padding-left: 110px;
+   
+}
+.offer-image-info #last-link{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    background-color:#E02C6D;
+    color: white;
+    padding: 10px;
+    margin-right: 110px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-
+/*----------------------------- footer------------------- */
+    footer{
+        background-color: rgb(24, 1, 46);
+        margin-top: 100px;
+    }
+    .footer-container{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        
+    }
+    .footer-container h3{
+        font-size: 25px;
+        font-weight:bolder;
+        padding-top: 30px;
+       
+    }
+    .footer-container p{
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 30px;
+    }
+    .footer-container .footer-icon{
+        font-size: 30px;
+    }
 
 
