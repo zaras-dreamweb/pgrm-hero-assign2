@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lato&family=Merriweather&family=Montserrat&family=Poppins:wght@500&family=Roboto+Mono&family=The+Nautigal:wght@700&family=Ubuntu&family=Vujahday+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* commons */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+    
+}
+
+.top-title h3{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.navigator{
+    display: flex;
+    
+
+}
+
+.navigator li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigator li{
+    list-style: none;
+    margin: 15px;
+    
+}
+.navigator, .icon{
+    font-size: 25px;
+    
+}
+
