@@ -22,6 +22,14 @@ header{
     
 }
 
+#nav-checkbox{
+    display: none;
+}
+.nav-checkbox-icon{
+    display: none;
+    font: 30px;
+}
+
 .top-title h3{
     color: #3A3A3A;
     font-size: 34px;
@@ -115,13 +123,15 @@ margin-left: 250px;
 /*-------------------------- Main grid section ----------------------*/
 .main-grid{
     margin-top: 130px;
+    text-align: center;
 }
 .main-grid h2{
-    text-align: center;
+    display: inline-block;
+    border-bottom: 5px  solid #E02C6D;
     font-size: 28px;
     font-weight: 900;
     color: #3A3A3A;
-    padding-bottom: 50px;
+    margin:50px 0;
 }
 
 
@@ -166,8 +176,7 @@ span{
     font-size: 15px;
     font-weight: 900;
     color: #787885;
-    line-height: 25px;
-    
+    line-height: 25px;    
 }
 
 /* ------------------see more link---------------- */
@@ -201,8 +210,7 @@ span{
 }
 
 .offer-image-info img{
-    padding-left: 110px;
-   
+    padding-left: 110px;   
 }
 .offer-image-info #last-link{
     text-decoration: none;
@@ -245,4 +253,92 @@ span{
         font-size: 30px;
     }
 
+    /* ---------------media queries---------------- */
+
+@media only screen and (max-width:688px){
+    .top-title h3{
+        text-align: center;
+    }
+
+    .container  
+    .article{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    }
+
+    .grid-bodies{
+        grid-template-columns:repeat(1, 1fr)
+    }
+    .offer-image-info{
+        grid-template-columns:repeat(1, 1fr)
+    }
+
+    .optional-container h2{
+        text-align: center;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:950px){
+    .nav-checkbox-icon{
+        display: block;
+    }
+
+    .navigator{
+        position: fixed;
+        width: 100%;
+        top: 10%;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(104, 102, 102);
+        transform:translateY(-700px) ;
+
+    }
+
+    .navigator li a {
+        color: white;
+    }
+    #nav-checkbox:checked~.navigator{
+        transform:translateY(0) ;
+
+    }
+
+    .top-title h3{
+        text-align: center;
+    }
+
+    .container.article .left-part{
+        display: flex;
+        width: 30%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .container .right-part{
+        display: flex;
+        width: 30%;
+        padding-top: 20%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .grid-bodies{
+        grid-template-columns:repeat(2, 1fr)
+    }
+    .offer-image-info{
+        grid-template-columns:repeat(1, 1fr)
+    }
+
+    .optional-container h2{
+        text-align: center;
+    }
+
+    
+}
 
